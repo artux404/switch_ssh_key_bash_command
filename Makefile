@@ -8,8 +8,8 @@ requirements: $(REQUIREMENTS_INSTALLED)
 $(REQUIREMENTS_INSTALLED): switch_ssh_key_script.sh
 	@echo "Installing..."
 
-	@cp ~/.ssh/id_rsa /.ssh/id_rsa.bk
-	@cp ~/.ssh/id_rsa.pub /.ssh/id_rsa.pub.bk
+	@cp ~/.ssh/id_rsa ~/.ssh/id_rsa.bk
+	@cp ~/.ssh/id_rsa.pub ~/.ssh/id_rsa.pub.bk
 
 	@mkdir $(KEYS_DIR)
 
