@@ -8,6 +8,8 @@ requirements: $(REQUIREMENTS_INSTALLED)
 $(REQUIREMENTS_INSTALLED): switch_ssh_key_script.sh
 	@echo "Installing..."
 
+	@mkdir $(KEYS_DIR)
+
 	@chmod 700 $(KEYS_DIR)
 
 	@cp ./switch_ssh_key_script.sh $(SCRIPT_FILE)
